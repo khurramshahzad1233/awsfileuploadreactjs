@@ -13,7 +13,9 @@ const Awsupload = () => {
     const uploadfilehandler=async()=>{
         const formdata=new FormData();
         for(let i=0;i<file.length; i++){
-            formdata.append("files",file[i])
+            formdata.append("files",file[i]);
+            formdata.append("email","khurram@gmail.com");
+            formdata.append("systeminformation","shahzad,adnan,khurram")
         };
 
 
