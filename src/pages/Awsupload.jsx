@@ -14,9 +14,10 @@ const Awsupload = () => {
         const formdata=new FormData();
         for(let i=0;i<file.length; i++){
             formdata.append("files",file[i]);
-            formdata.append("email","khurram@gmail.com");
-            formdata.append("systeminformation","shahzad,adnan,khurram")
-        };
+          };
+          formdata.append("email","khurram@gmail.com");
+          formdata.append("systeminformation","shahzad,adnan,khurram");
+          formdata.append("analysisoption","khurram,adnan,shahzad");
 
 
         try {
